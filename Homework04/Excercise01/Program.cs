@@ -19,24 +19,23 @@
 
 //Task 03-Create a function that takes a number as input. This method should return the sum of the digits in the number.
 
-Console.WriteLine("Please enter a number (multiple digits)");
-bool userNumberInput = int.TryParse(Console.ReadLine(), out int number);
-int[] numberDigitsArray = number.ToString(); 
-
-for (int i = 0; i < numberDigitsArrayth; i++)
-{ 
-    Console.WriteLine(numberDigitsArray[i]);
+int PrintNumberDigits ()
+{
+    int userNumberInput = 0;
+    int sum = 0;
+    Console.WriteLine("Please enter a number (multiple digits)");
+    userNumberInput = Convert.ToInt32(Console.ReadLine());
+    int[] numberDigitsArray = userNumberInput.ToString();
+    for (int i = 0; i < numberDigitsArrayth; i++)
+    {
+        sum += numberDigitsArray[i];
+    }
 }
 
 
 
-//int sumOfNumberDigits (int number)
-//{
-
-//}
 
 
 
 
 
-Console.ReadLine();
